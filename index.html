@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="css/main.css" rel="stylesheet">
+    <script src="bootstrap/js/bootstrap.js"></script>
+    <script src="func.js"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <title>Cunhantã Digital</title>
+</head>
+
+<body>
+    <!--HEADER-->
+    <div id="header">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light navbar-fixed-top">
+                <a class="navbar-brand" href="#">
+                    <img src="assets/logo-cunhantadigital.png" alt="Logo Cunhanta Digital" height="70px">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#somos">Sobre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#projetos">Projetos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#galeria">Galeria</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contato">Contato</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!--HEADER-->
+
+    <!--BANNER-->
+    <main>
+        <div class="banner">
+
+        </div>
+    </main>
+    <!--BANNER-->
+
+    <!--QUEM SOMOS/ MISSAO / VISAO-->
+    <!--<hr class="featurette-divider">-->
+    <section id="quemsomos">
+        <div class="container-fluid quem-somos text-center margin">
+            <h2 class="featurette-heading">Quem Somos? <span class="text-muted">Somos Cunhantã Digital!</span></h2>
+            <div class="container espaco-baixo-fotos" >
+                <div class="row">
+                    <div class="col-lg-12">
+                        <img src="assets/cunhan-img-3.png" alt="" width="70%" class="espaco-baixo-fotos espaco-alto-fotos">
+                        <p>Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+     <!--QUEM SOMOS/ MISSAO / VISAO-->
+
+     <hr class="featurette-divider">
+
+     <!--PROJETOS-->
+     <section id="projetos">
+        <div class="container-fluid text-center margin">
+            <h2 class="featurette-heading espaco-alto-fotos espaco-baixo-fotos">Projetos</h2>
+            <div class="container espaco-alto-fotos espaco-baixo-fotos">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. </p>
+                        <img src="assets/app.jpeg" alt="" width="100%">
+                    </div>
+                    <div class="col-lg-6"> <!-- Esse numero no final tem que ser calculado dependendo de quantas imagens voce quer colocar, se sao 2 imagens entao o calculo e 12/2 que da 6. Se sao 3 imagens entao o calculo é 12/3 qu eda 4.-->
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. </p>
+                        <img src="assets/site.jpg" alt="" width="100%">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!--PROJETOS-->
+
+     <hr class="featurette-divider">
+
+     <!--GALERIA-->
+     <!--<section id="galeria">
+        <div class="container-fluid servicos text-center margin">
+            <h3 class="margin">Galeria</h3>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. </p>
+                        <img src="assets/app.jpeg" alt="" width="100%">
+                    </div>
+                    <div class="col-lg-6"> <!-- Esse numero no final tem que ser calculado dependendo de quantas imagens voce quer colocar, se sao 2 imagens entao o calculo e 12/2 que da 6. Se sao 3 imagens entao o calculo é 12/3 qu eda 4.-->
+                       <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. </p>
+                        <img src="assets/site.jpg" alt="" width="100%">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>-->
+    <!--SERVICOS-->
+    <div id="galeria" class="block">
+        <div class="container">
+          <h2 class="title text-center">Galeria</h2>
+          <h4 class="subtitle text-center mb-4">
+            Momentos incríveis do Cunhantã!
+          </h4>
+  
+          <div class="button-group">
+            <button type="button" class="active" data-filter="*" id="btn-all">
+              Todos
+            </button>
+            <!--<button type="button" data-filter=".website">Website</button>
+            <button type="button" data-filter=".email">Email</button>
+            <button type="button" data-filter=".apps">Apps</button>
+            <button type="button" data-filter=".graficos">Gráficos</button>-->
+          </div>
+  
+          <div class="row grid">
+            <div class="col-lg-4 col-6 mb-4 element-item website apps">
+              <a href="assets/servicos/1.jpg" class="popup-link">
+                <img src="assets/app.jpeg" class="img-fluid mb-2" />
+              </a>
+              <h5 class="text-uppercase mb-1">Lorem ipsun</h5>
+              <p class="mb-0">
+                <!--<span class="badge bg-light text-dark">Website</span>
+                <span class="badge bg-light text-dark">Apps</span>-->
+              </p>
+            </div>
+            <div class="col-lg-4 col-6 mb-4 element-item email">
+              <a href="assets/servicos/2.jpg" class="popup-link">
+                <img src="assets/site.jpg" class="img-fluid mb-2" />
+              </a>
+              <h5 class="text-uppercase">Lorem ipsun</h5>
+              <p class="mb-0 tags">
+               <!-- <span class="badge bg-light text-dark">Email</span>-->
+              </p>
+            </div>
+            <div class="col-lg-4 col-6 mb-4 element-item apps">
+              <a href="assets/servicos/3.jpg" class="popup-link">
+                <img src="assets/app.jpeg" class="img-fluid mb-2" />
+              </a>
+              <h5 class="text-uppercase">Lorem ipsun</h5>
+              <p class="mb-0 tags">
+               <!-- <span class="badge bg-light text-dark">Apps</span>-->
+              </p>
+            </div>
+            <div class="col-lg-4 col-6 mb-4 element-item apps">
+              <a href="assets/servicos/4.jpg" class="popup-link">
+                <img src="assets/site.jpg" class="img-fluid mb-2" />
+              </a>
+              <h5 class="text-uppercase">Lorem ipsun</h5>
+              <p class="mb-0 tags">
+               <!-- <span class="badge bg-light text-dark">Apps</span>-->
+              </p>
+            </div>
+            <div class="col-lg-4 col-6 mb-4 element-item email">
+              <a href="assets/servicos/5.jpg" class="popup-link">
+                <img src="assets/app.jpeg" class="img-fluid mb-2" />
+              </a>
+              <h5 class="text-uppercase">Lorem ipsun</h5>
+              <p class="mb-0 tags">
+                <!--<span class="badge bg-light text-dark">Email</span>-->
+              </p>
+            </div>
+            <div class="col-lg-4 col-6 mb-4 element-item apps graficos">
+              <a href="assets/servicos/6.jpg" class="popup-link">
+                <img src="assets/site.jpg" class="img-fluid mb-2" />
+              </a>
+              <h5 class="text-uppercase">Lorem ipsun</h5>
+              <p class="mb-0 tags">
+                <!--<span class="badge bg-light text-dark">Gráficos</span>
+                <span class="badge bg-light text-dark">Apps</span>-->
+              </p>
+            </div>
+            <div class="col-lg-4 col-6 mb-4 element-item website">
+              <a href="assets/servicos/7.jpg" class="popup-link">
+                <img src="assets/app.jpeg" class="img-fluid mb-2" />
+              </a>
+              <h5 class="text-uppercase">Lorem ipsun</h5>
+              <p class="mb-0 tags">
+               <!-- <span class="badge bg-light text-dark">Website</span>-->
+              </p>
+            </div>
+            <div class="col-lg-4 col-6 mb-4 element-item email">
+              <a href="assets/servicos/8.jpg" class="popup-link">
+                <img src="assets/site.jpg" class="img-fluid mb-2" />
+              </a>
+              <h5 class="text-uppercase">Lorem ipsun</h5>
+              <p class="mb-0 tags">
+                <!--<span class="badge bg-light text-dark">Email</span>-->
+              </p>
+            </div>
+            <div class="col-lg-4 col-6 mb-4 element-item apps">
+              <a href="assets/servicos/9.jpg" class="popup-link">
+                <img src="assets/app.jpeg" class="img-fluid mb-2" />
+              </a>
+              <h5 class="text-uppercase">Lorem ipsun</h5>
+              <p class="mb-0 tags">
+               <!-- <span class="badge bg-light text-dark">Apps</span>-->
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--//SERVICOS-->
+     
+     
+     <!--GALERIA-->
+
+     <hr class="featurette-divider">
+
+     <!--CONTATO-->
+    <section id="contato">
+        <div class="container-fluid servicos text-center margin">
+            <h3 class="margin">Contato</h3>
+            <div class="container">
+                <!--<div class="row">
+                    <div class="col-lg-6">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. </p>
+                        <img src="assets/app.jpeg" alt="" width="100%">
+                    </div>
+                    <div class="col-lg-6"> <!-- Esse numero no final tem que ser calculado dependendo de quantas imagens voce quer colocar, se sao 2 imagens entao o calculo e 12/2 que da 6. Se sao 3 imagens entao o calculo é 12/3 qu eda 4.-->
+                       <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. </p>
+                        <img src="assets/site.jpg" alt="" width="100%">
+                    </div>
+                </div>-->
+            </div>
+        </div>
+    </section>
+
+
+    <!--CONTATO-->
+
+
+     <hr class="featurette-divider">
+
+     <section id="parceiros">
+        <div class="container-fluid parceiros text-center margin">
+            <h3 class="margin">Parceiros</h3>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="assets/icompp.png" alt="" width="80%">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="assets/icompp.png" alt="" width="80%">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="assets/icompp.png" alt="" width="80%">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!-- FOOTER -->
+     <footer class="container">
+        <p class="float-right"><a href="#">Voltar ao topo</a></p>
+        <p>&copy; Companhia S.A., 2017-2018 &middot; <a href="#">Privacidade</a> &middot; <a href="#">Termos</a></p>
+      </footer>
+
+     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="../../assets/js/vendor/popper.min.js"></script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+    <!-- Só faz o nossos placeholders de imagens funcionarem. Não precisar copiar a próxima linha! -->
+    <script src="../../assets/js/vendor/holder.min.js"></script>
+
+</body>
+
+</html>
