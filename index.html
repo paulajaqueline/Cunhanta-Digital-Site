@@ -8,10 +8,8 @@
     <!-- Bootstrap CSS -->
     <link href="css/main.css" rel="stylesheet">
     <script src="bootstrap/js/bootstrap.js"></script>
-    <script src="func.js"></script>
-
+    <script src="js/func.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-
     <title>Cunhantã Digital</title>
 </head>
 
@@ -20,7 +18,7 @@
     <div id="header" class="fixed-top">
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-light navbar-fixed-top">
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="index.html">
                     <img src="assets/logo-cunhantadigital.png" alt="Logo Cunhanta Digital" height="70px">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -46,7 +44,7 @@
             </nav>
         </div>
     </div>
-    <!--HEADER-->
+    <!-- FIM HEADER-->
 
     <!--BANNER-->
     <main>
@@ -54,7 +52,7 @@
 
         </div>
     </main>
-    <!--BANNER-->
+    <!--FIM BANNER-->
 
     <!--QUEM SOMOS/ MISSAO / VISAO-->
     <!--<hr class="featurette-divider">-->
@@ -65,190 +63,149 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <img src="assets/cunhan-img-3.png" alt="" width="70%" class="espaco-baixo-fotos espaco-alto-fotos">
-                        <p>Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+                        <p>O projeto Cunhantã Digital iniciou em 2015 no Instituto de Computação (IComp) da Universidade Federal do Amazonas.
+                        O objetivo central do Cunhantã Digital é despertar, nas alunas do ensino fundamental e médio, o interesse na Computação e na área de exatas em geral.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-     <!--QUEM SOMOS/ MISSAO / VISAO-->
+     <!--FIM QUEM SOMOS/ MISSAO / VISAO-->
 
      <hr class="featurette-divider">
 
      <!--PROJETOS-->
      <section id="projetos">
         <div class="container-fluid text-center margin">
-            <h2 class="featurette-heading espaco-alto-fotos espaco-baixo-fotos">Projetos</h2>
-            <div class="container espaco-alto-fotos espaco-baixo-fotos">
+            <h2 class="featurette-heading espaco-alto-fotos espaco-baixo-fotos">Projeto: Garotas Espertas</h2>
+            <div class="container">
                 <div class="row">
-                    <div class="col-lg-6">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. </p>
-                        <img src="assets/app.jpeg" alt="" width="100%">
-                    </div>
-                    <div class="col-lg-6"> <!-- Esse numero no final tem que ser calculado dependendo de quantas imagens voce quer colocar, se sao 2 imagens entao o calculo e 12/2 que da 6. Se sao 3 imagens entao o calculo é 12/3 qu eda 4.-->
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. </p>
-                        <img src="assets/site.jpg" alt="" width="100%">
+                    <div class="col-lg-12">
+                        <a href="garotas-espertas.html"><img src="assets/marca-horizontalpequena.png" alt="" width="100%"></a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
-     <!--PROJETOS-->
+     <!--FIM PROJETOS-->
 
      <hr class="featurette-divider">
 
      <!--GALERIA-->
-     <!--<section id="galeria">
-        <div class="container-fluid servicos text-center margin">
-            <h3 class="margin">Galeria</h3>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. </p>
-                        <img src="assets/app.jpeg" alt="" width="100%">
-                    </div>
-                    <div class="col-lg-6"> <!-- Esse numero no final tem que ser calculado dependendo de quantas imagens voce quer colocar, se sao 2 imagens entao o calculo e 12/2 que da 6. Se sao 3 imagens entao o calculo é 12/3 qu eda 4.-->
-                       <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. </p>
-                        <img src="assets/site.jpg" alt="" width="100%">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>-->
-    <!--SERVICOS-->
-    <div id="galeria" class="block">
-        <div class="container">
-          <h2 class="title text-center">Galeria</h2>
-          <h4 class="subtitle text-center mb-4">
-            Momentos incríveis do Cunhantã!
-          </h4>
-  
-          <div class="button-group">
-            <button type="button" class="active" data-filter="*" id="btn-all">
-              Todos
-            </button>
-            <!--<button type="button" data-filter=".website">Website</button>
-            <button type="button" data-filter=".email">Email</button>
-            <button type="button" data-filter=".apps">Apps</button>
-            <button type="button" data-filter=".graficos">Gráficos</button>-->
+    <!--
+      * A classe "col-lg-x" serve para tornar responsiva o cálculo é feito 12/n, sendo n o número de colunas
+      o resultado dess divisão é o valor que substitui o x.
+      Linha com 2 imagens: class="col-lg-6";
+      Linha com 4 imagens: class="col-lg-3";
+      Linha com 6 imagens: class="col-lg-2";
+
+      * A classe "min" guarda os elementos que são mostrados na página index, funcionam como miniaturas para
+      a foto real. A imagem da miniatura não necessariamente precisa ser a mesma da lbox;
+
+      * A classe "lbox" guarda os elementos que formarão a espécie de pop-up da imagem clicada;
+
+      * A classe "btn-min" são os botões da prev(ver a foto antes da atual), next(ver a próxima foto da galeria)
+      e close(fechar a exibição da lbox e voltar a navegar pela página)
+    -->
+    
+    <section id="galeria" class="block">
+      <div class="container-fluid text-center margin">
+        <h2 class="title text-center">Galeria</h2>
+      <h4 class="subtitle text-center mb-4">Momentos incríveis do Cunhantã!</h4>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <a href="#img1"><img src="assets/galeria1.png" class="min"></a>
           </div>
-  
-          <div class="row grid">
-            <div class="col-lg-4 col-6 mb-4 element-item website apps">
-              <a href="assets/servicos/1.jpg" class="popup-link">
-                <img src="assets/app.jpeg" class="img-fluid mb-2" />
-              </a>
-              <h5 class="text-uppercase mb-1">Lorem ipsun</h5>
-              <p class="mb-0">
-                <!--<span class="badge bg-light text-dark">Website</span>
-                <span class="badge bg-light text-dark">Apps</span>-->
-              </p>
-            </div>
-            <div class="col-lg-4 col-6 mb-4 element-item email">
-              <a href="assets/servicos/2.jpg" class="popup-link">
-                <img src="assets/site.jpg" class="img-fluid mb-2" />
-              </a>
-              <h5 class="text-uppercase">Lorem ipsun</h5>
-              <p class="mb-0 tags">
-               <!-- <span class="badge bg-light text-dark">Email</span>-->
-              </p>
-            </div>
-            <div class="col-lg-4 col-6 mb-4 element-item apps">
-              <a href="assets/servicos/3.jpg" class="popup-link">
-                <img src="assets/app.jpeg" class="img-fluid mb-2" />
-              </a>
-              <h5 class="text-uppercase">Lorem ipsun</h5>
-              <p class="mb-0 tags">
-               <!-- <span class="badge bg-light text-dark">Apps</span>-->
-              </p>
-            </div>
-            <div class="col-lg-4 col-6 mb-4 element-item apps">
-              <a href="assets/servicos/4.jpg" class="popup-link">
-                <img src="assets/site.jpg" class="img-fluid mb-2" />
-              </a>
-              <h5 class="text-uppercase">Lorem ipsun</h5>
-              <p class="mb-0 tags">
-               <!-- <span class="badge bg-light text-dark">Apps</span>-->
-              </p>
-            </div>
-            <div class="col-lg-4 col-6 mb-4 element-item email">
-              <a href="assets/servicos/5.jpg" class="popup-link">
-                <img src="assets/app.jpeg" class="img-fluid mb-2" />
-              </a>
-              <h5 class="text-uppercase">Lorem ipsun</h5>
-              <p class="mb-0 tags">
-                <!--<span class="badge bg-light text-dark">Email</span>-->
-              </p>
-            </div>
-            <div class="col-lg-4 col-6 mb-4 element-item apps graficos">
-              <a href="assets/servicos/6.jpg" class="popup-link">
-                <img src="assets/site.jpg" class="img-fluid mb-2" />
-              </a>
-              <h5 class="text-uppercase">Lorem ipsun</h5>
-              <p class="mb-0 tags">
-                <!--<span class="badge bg-light text-dark">Gráficos</span>
-                <span class="badge bg-light text-dark">Apps</span>-->
-              </p>
-            </div>
-            <div class="col-lg-4 col-6 mb-4 element-item website">
-              <a href="assets/servicos/7.jpg" class="popup-link">
-                <img src="assets/app.jpeg" class="img-fluid mb-2" />
-              </a>
-              <h5 class="text-uppercase">Lorem ipsun</h5>
-              <p class="mb-0 tags">
-               <!-- <span class="badge bg-light text-dark">Website</span>-->
-              </p>
-            </div>
-            <div class="col-lg-4 col-6 mb-4 element-item email">
-              <a href="assets/servicos/8.jpg" class="popup-link">
-                <img src="assets/site.jpg" class="img-fluid mb-2" />
-              </a>
-              <h5 class="text-uppercase">Lorem ipsun</h5>
-              <p class="mb-0 tags">
-                <!--<span class="badge bg-light text-dark">Email</span>-->
-              </p>
-            </div>
-            <div class="col-lg-4 col-6 mb-4 element-item apps">
-              <a href="assets/servicos/9.jpg" class="popup-link">
-                <img src="assets/app.jpeg" class="img-fluid mb-2" />
-              </a>
-              <h5 class="text-uppercase">Lorem ipsun</h5>
-              <p class="mb-0 tags">
-               <!-- <span class="badge bg-light text-dark">Apps</span>-->
-              </p>
-            </div>
+          <div class="col-lg-4"> 
+            <a href="#img2"><img src="assets/galeria2.png" class="min"></a>
+          </div>
+          <div class="col-lg-4">
+            <a href="#img3"><img src="assets/galeria3.png" class="min"></a>
+          </div>
+          <div class="col-lg-4">
+            <a href="#img4"><img src="assets/galeria4.png" class="min"></a>
+          </div>
+          <div class="col-lg-4">
+            <a href="#img5"><img src="assets/galeria5.png" class="min"></a>
+          </div>
+          <div class="col-lg-4">
+            <a href="#img6"><img src="assets/galeria6.png" class="min"></a>
+          </div>
+        </div>
+        <div class="lbox" id="img1">
+          <div class="box_img">
+            <a href="" class="btn-min" id="prev">&#171</a>
+            <a href="#galeria" class="btn-min" id="close">X</a>
+            <img src="assets/foto1.png">
+            <a href="#img2" class="btn-min" id="next">&#187</a>
+          </div>
+        </div>
+        <div class="lbox" id="img2">
+          <div class="box_img">
+            <a href="#img1" class="btn-min" id="prev">&#171</a>
+            <a href="#galeria" class="btn-min" id="close">X</a>
+            <img src="assets/foto2.png">
+            <a href="#img3" class="btn-min" id="next">&#187</a>
+          </div>
+        </div>
+        <div class="lbox" id="img3">
+          <div class="box_img">
+            <a href="#img2" class="btn-min" id="prev">&#171</a>
+            <a href="#galeria" class="btn-min" id="close">X</a>
+            <img src="assets/foto3.png">
+            <a href="#img4" class="btn-min" id="next">&#187</a>
+          </div>
+        </div>
+        <div class="lbox" id="img4">
+          <div class="box_img">
+            <a href="#img3" class="btn-min" id="prev">&#171</a>
+            <a href="#galeria" class="btn-min" id="close">X</a>
+            <img src="assets/foto4.png">
+            <a href="#img5" class="btn-min" id="next">&#187</a>
+          </div>
+        </div>
+        <div class="lbox" id="img5">
+          <div class="box_img">
+            <a href="#img4" class="btn-min" id="prev">&#171</a>
+            <a href="#galeria" class="btn-min" id="close">X</a>
+            <img src="assets/foto5.png">
+            <a href="#img6" class="btn-min" id="next">&#187</a>
+          </div>
+        </div>
+        <div class="lbox" id="img6">
+          <div class="box_img">
+            <a href="#img5" class="btn-min" id="prev">&#171</a>
+            <a href="#galeria" class="btn-min" id="close">X</a>
+            <img src="assets/foto6.png">
+            <a href="#galeria" class="btn-min" id="next">&#187</a>
           </div>
         </div>
       </div>
-      <!--//SERVICOS-->
-     
-     
-     <!--GALERIA-->
+
+
+      </div>
+
+
+      
+    </section>
+    <!--FIM GALERIA-->
 
      <hr class="featurette-divider">
 
-     <!--CONTATO-->
+    <!--CONTATO-->
     <section id="contato">
         <div class="container-fluid servicos text-center margin">
             <h2 class="margin">Contato</h2>
             <div class="container">
-                <!--<div class="row">
-                    <div class="col-lg-6">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. </p>
-                        <img src="assets/app.jpeg" alt="" width="100%">
-                    </div>
-                    <div class="col-lg-6"> <!-- Esse numero no final tem que ser calculado dependendo de quantas imagens voce quer colocar, se sao 2 imagens entao o calculo e 12/2 que da 6. Se sao 3 imagens entao o calculo é 12/3 qu eda 4.-->
-                       <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. </p>
-                        <img src="assets/site.jpg" alt="" width="100%">
-                    </div>
-                </div>-->
+              <h4 class="margin text-muted">Clique no botão e saiba mais sobre o Cunhantã Digital</h4>
+              <div class="container">
+                  <a href="https://forms.gle/9ZQTyHvPE1FuYtxk6" target="blank"><button type="button" class="btn btn-dark espaco-alto-fotos">Fale Conosco!</button></a>
+              </div>
             </div>
         </div>
     </section>
-
-
-    <!--CONTATO-->
+    <!--FIM CONTATO-->
 
 
      <hr class="featurette-divider">
@@ -256,16 +213,13 @@
      <section id="parceiros">
         <div class="container-fluid parceiros text-center margin">
             <h2 class="margin">Parceiros</h2>
-            <div class="container">
+            <div class="container" id="parceiros-home">
                 <div class="row">
-                    <div class="col-md-4">
-                        <img src="assets/icompp.png" alt="" width="80%">
+                    <div class="col-md-6">
+                        <img src="assets/icompp.png" alt="" width="33%">
                     </div>
-                    <div class="col-md-4">
-                        <img src="assets/icompp.png" alt="" width="80%">
-                    </div>
-                    <div class="col-md-4">
-                        <img src="assets/icompp.png" alt="" width="80%">
+                    <div class="col-md-6">
+                        <img src="assets/Logo-MeninasDigitais.png" alt="" width="55%">
                     </div>
                 </div>
             </div>
@@ -273,10 +227,36 @@
     </section>
 
      <!-- FOOTER -->
-     <footer class="container">
-        <p class="float-right"><a href="#">Voltar ao topo</a></p>
-        <p>&copy; Companhia S.A., 2017-2018 &middot; <a href="#">Privacidade</a> &middot; <a href="#">Termos</a></p>
-      </footer>
+     <footer class="container espaco-baixo-fotos">
+      <div class="container">
+          <div class="row">
+              <div class="col-md-6 align-self-center">
+                  <p class="float-right"><a href="#">Voltar ao topo</a></p>
+                  <p>&copy; Cunhantã Digital &middot;
+              </div>
+              <div class="col-md-6 align-self-center">
+                  <ul>
+                      <li>
+                          <a href="https://www.facebook.com/cunhantadigital/photos_by" target="blank"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                              <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                            </svg>
+                      </li>
+                      <li>
+                          <a href="https://www.instagram.com/cunhantadigital/?hl=pt-br" target="blank"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                              <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+                            </svg>
+                      </li>
+                      <li>
+                          <a href="https://www.youtube.com/c/Cunhant%C3%A3Digital" target="blank"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-play-btn-fill" viewBox="0 0 16 16">
+                              <path d="M0 12V4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm6.79-6.907A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814l-3.5-2.5z"/>
+                            </svg>
+                      </li>
+
+                  </ul>
+              </div>
+          </div>
+      </div>
+    </footer>
 
      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
@@ -286,5 +266,4 @@
     <script src="../../assets/js/vendor/holder.min.js"></script>
 
 </body>
-
 </html>

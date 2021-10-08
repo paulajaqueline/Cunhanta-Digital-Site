@@ -28,3 +28,10 @@ h5 {
         padding: 60px 40px 0px 40px;
        }
 }
+
+#apoiadores{
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    margin:auto;
+}
