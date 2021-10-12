@@ -42,9 +42,7 @@
 }
 
 #playlist .video-list .vid iframe{
-    width: 130px;
-    height: 100px;
-    border-radius: 5px;
+    display: none;
 }
 
 #playlist .video-list .vid{
@@ -56,6 +54,12 @@
     padding: 10px;
     border: 1px solid rgba(0, 0, 0, alpha.1);
     cursor: pointer;
+}
+
+#playlist .video-list .vid img{
+    width: 130px;
+    height: 100px;
+    border-radius: 5px;
 }
 
 #playlist .video-list .vid.active p{
@@ -71,7 +75,7 @@
 }
 
 #playlist .video-list .vid.active{
-    background: #53b7ac;
+    background: #51ccbe9c;
 }
 
 #playlist .video-list .vid.active .titulo{
